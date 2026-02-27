@@ -1,0 +1,173 @@
+@import url("./fonts.css");
+
+body {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--fs-lg);
+  line-height: var(--lh-loose);
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.text-small {
+  font-size: var(--fs-md);
+  line-height: var(--lh-base);
+  color: var(--color-accent-text);
+}
+
+.half {
+  width: 59%;
+}
+
+.whole {
+  width: 100%;
+}
+
+.main {}
+
+.section {
+  padding: 20px;
+  background-color: var(--color-accent-text);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.box {
+  background-color: #fff;
+  width: 50%;
+  padding: 35px 35px 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-normal);
+  margin-bottom: 20px;
+}
+
+.box__text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.box__enterance {}
+
+.form__title {}
+
+.form__group {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.form__input {
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  height: 38px;
+}
+
+.form__input:focus {
+  outline: 1px solid var(--color-acent);
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  line-height: var(--lh-loose);
+}
+
+.form__text {}
+
+.form__check {
+  display: flex;
+  gap: 20px;
+}
+
+.form__label-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.form__check-gender {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E4E4E4;
+  border-radius: 50%;
+}
+
+.form__check-gender::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 0 0px 5px #007BFF inset;
+  opacity: 0;
+  transition: all 0.3s;
+
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked~.form__check-gender::after {
+  opacity: 1;
+}
+
+.form__button {
+  background-color: var(--color-acent);
+  color: #fff;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.box__text-link {
+  color: var(--color-acent);
+}
+
+.box__entrance {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-top: 1px solid #E4E4E4;
+}
+
+.box__entrance-link {
+  color: var(--color-acent);
+}
+
+.form__input {}
+
+.form__country {
+  height: 38px;
+  padding: 10px;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../assets/img/Arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px 18px;
+}

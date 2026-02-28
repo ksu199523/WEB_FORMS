@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="./css/vars.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <main class="main">
     <section class="section">
@@ -17,55 +19,56 @@
             <form class="form" action="#">
               <h2 class="form__title title">Create an Account</h2>
               <div class="form__group ">
-              <label class="form__label half" >
+                <label class="form__label half">
                   First Name
-                <input class="form__input" type="text">
-              </label>
-              <label class="form__label half" >
-                Last Name
-                <input class="form__input" type="text">
-              </label>
+                  <input class="form__input" type="text" required>
+                </label>
+                <label class="form__label half">
+                  Last Name
+                  <input class="form__input" type="text" required>
+                </label>
               </div>
               <div class="form__box-wrap">
-              <label class="form__label whole" >
+                <label class="form__label whole">
                   E-mail
-                <input class="form__input" type="email">
-              </label>
-              <p class="form__text text-small">We'll never share your email with anyone else</p>
+                  <input class="form__input" type="email" required>
+                </label>
+                <p class="form__text text-small">We'll never share your email with anyone else</p>
               </div>
-              <div class="form__check">
-                <label class="form__label-check" >
-                  <input class="form__checkbox"  type="radio" name="gender" value="male">
-                  <span class="form__check-gender"></span>
+              <div class="form__radio">
+                <label class="form__label-radio">
+                  <input class="form__radiobox" type="radio" name="gender" value="male">
+                  <span class="form__radio-gender"></span>
                   Male
                 </label>
-                 <label class="form__label-check" >
-                  <input class="form__checkbox"  type="radio" name="gender" value="male">
-                  <span class="form__check-gender"></span>
+                <label class="form__label-radio">
+                  <input class="form__radiobox" type="radio" name="gender" value="famale">
+                  <span class="form__radio-gender"></span>
                   Female
                 </label>
               </div>
               <div class="form__group ">
-                
-             <label class="form__label half">Country
-             <select name="country" class="form__country">
-                <option value="Ukraine">Україна</option>
-                <option value="Poland">Польща</option>
-                <option value="France">Франція</option>
-              </select>
-              </label>
-              <label class="form__label half" >
-                City
-                <input class="form__input" type="text">
-              </label>
+
+                <label class="form__label half">Country
+                  <select name="country" class="form__country" required>
+                    <option value="" selected disabled>Оберіть країну</option>
+                    <option value="Ukraine">Україна</option>
+                    <option value="Poland">Польща</option>
+                    <option value="France">Франція</option>
+                  </select>
+                </label>
+                <label class="form__label half">
+                  City
+                  <input class="form__input" type="text">
+                </label>
               </div>
               <button class="form__button whole" type="submit">Sign Up</button>
-                <p class="box__text text-small">
-              By clicking the 'Sign Up' button, you confirm that you accept our 
-              <br>
-              <a class="box__text-link" href="">Terms of Use</a> and
-              <a class="box__text-link" href="">Privacy Policy</a>
-            </p>
+              <p class="box__text text-small">
+                By clicking the 'Sign Up' button, you confirm that you accept our
+                <br>
+                <a class="box__text-link" href="">Terms of Use</a> and
+                <a class="box__text-link" href="">Privacy Policy</a>
+              </p>
             </form>
             <div class="box__entrance">
               <span>Have an account?</span>
@@ -73,11 +76,61 @@
             </div>
           </div>
           <div class="box">
-            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nostrum quam iste aperiam eos necessitatibus libero quia, eius quibusdam quidem!</p>
+            <form class="form" action="#">
+              <h2 class="form__title title">Profile</h2>
+              <div class="form__photo">
+                <img class="form__photo-img" src="./assets/img/Image.jpg" alt="Photo profile">
+                <div class="form__photo-wrapper">
+                  <div class="form__photo-item">
+                    <label class="form__photo-label">
+                      <input class="form__photo-down" type="text">
+                    </label>
+                    <button class="form__photo-del"></button>
+                  </div>
+                  <p class="form__photo-text text-small">Up to 1 MB (300x300 px)</p>
+                </div>
+              </div>
+              <div class="form__group ">
+                <label class="form__label half">
+                  Name
+                  <input class="form__input" type="text" required>
+                </label>
+                <label class="form__label half">
+                  Email
+                  <input class="form__input" type="email" required>
+                </label>
+              </div>
+              <div class="form__group ">
+                <label class="form__label half">Country
+                  <select name="country" class="form__country" required>
+                    <option value="" selected disabled>Оберіть країну</option>
+                    <option value="Ukraine">Україна</option>
+                    <option value="Poland">Польща</option>
+                    <option value="France">Франція</option>
+                  </select>
+                </label>
+                <label class="form__label half">
+                  City
+                  <input class="form__input" type="text">
+                </label>
+              </div>
+              <div class="form__group ">
+                <label class="form__label half">
+                  Zip Code
+                  <input class="form__input" type="text">
+                </label>
+                <label class="form__label half">
+                  Phone Number
+                  <input class="form__input" type="tel">
+                </label>
+              </div>
+              <button class="form__button third" type="submit">Update</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
   </main>
 </body>
+
 </html>
